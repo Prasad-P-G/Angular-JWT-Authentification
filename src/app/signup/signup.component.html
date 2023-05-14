@@ -1,0 +1,21 @@
+<div class="container mt-5">
+    <h1>Register</h1>
+    <div class="row col-6">
+        <form #signup="ngForm" (ngSubmit)="RegisterUser(signup.value)">
+            <div class="mb-3">
+                <input type="name" placeholder="Enter User Name" 
+                name="name" ngModel class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <input type="Password" placeholder="Enter Password" 
+                class="form-control" id="password" name="password" ngModel>
+            </div>
+            <div class="mb-3">
+                <input type="email" placeholder="Enter Email" 
+                name="Email" ngModel class="form-control" id="email">
+            </div>            
+            <button type="submit" class="btn btn-primary">Register</button>
+            already have accout?<a routerLink="/login" >Login</a>
+        </form>
+    </div>
+</div>

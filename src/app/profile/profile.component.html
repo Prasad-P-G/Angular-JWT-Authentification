@@ -1,0 +1,18 @@
+<div class="container" style="display: flex;flex-direction: column; align-items:flex-start">
+    <div class="row mt-5 col-12" style="display: flex;flex-direction: row;">
+        <div>
+        <h1 [align]="['left']">Existing users</h1>
+        <i class="fa fa-camera-retro"></i> fa-camera-retro
+        <div [align]="['right']">
+            <button type="button" (click)="logoutUser()" class="btn btn-danger">Logout</button>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <ul *ngFor="let user of users">
+            <li>
+                {{user.name}}
+            </li>
+        </ul>
+    </div>
+</div>

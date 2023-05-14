@@ -1,0 +1,17 @@
+<div class="container mt-5">
+    <h1>Login</h1>
+    <div class="row col-6">
+        <form #login="ngForm" (ngSubmit)="UserLogin(login.value)">
+            <div class="mb-3">
+                <input type="email" placeholder="Enter Email" 
+                name="Email" ngModel class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <input type="Password" placeholder="Enter Password" 
+                class="form-control" id="password" name="password" ngModel>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            Dont have account ? <a routerLink="/signup" class="ml-5" >Click here</a> to Signup
+        </form>
+    </div>
+</div>
